@@ -59,9 +59,7 @@ function outputMessage(message){
 // Edit users to the DOM
 
 function outputUsers(users){
-    // userList.innerHTML =  `
-    // ${users.map(user => `<li>${user.username}</li>`).join('')}
-    // `;
+    
     userList.innerHTML = '';
   users.forEach((user) => {
     const li = document.createElement('li');
@@ -81,5 +79,7 @@ document.getElementById('leave-btn').addEventListener('click', () => {
     if (leaveRoom) {
       window.location = '../index.html';
     } else {
+      
     }
+
   });
